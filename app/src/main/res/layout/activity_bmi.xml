@@ -18,23 +18,51 @@
         android:hint="Name"
         android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/inputWeight"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:hint="Weight (kg)"
-        android:inputType="numberDecimal" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Weight" />
 
-    <EditText
-        android:id="@+id/inputHeight"
+    <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/seekBarWeight"
         android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:hint="Height (cm)"
-        android:inputType="numberDecimal" />
+        android:max="150"
+        android:progress="1"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0 kgs"
+        android:id="@+id/textViewWeight"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Height" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarHeight"
+        android:layout_gravity="center_horizontal"
+        android:max="240"
+        android:progress="1"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0 cm"
+        android:id="@+id/textViewHeight"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/buttonCalculate"
